@@ -2,74 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stock Profile & Loss Calculator</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/s2/u/0/favicons?domain=neog.camp" />
     <link rel="stylesheet" href="mark14.css" />
+    <title>Profit and Loss</title>
 </head>
 
 <body>
-    <header>
-        <h1>Profile & Loss Calculator</h1>
-    </header>
+    <h1>📈Stock Profit and Loss</h1>
     <main>
-        <label class="input-label" for="initial-price">
-        Intial Price
-        <input
-          class="input"
-          type="text"
-          id="initial-price"
-          placeholder="Enter Initial Price Here"
-      /></label>
-        <label class="input-label" for="stocks-quantity">
-        Quantity of Stocks
-        <input
-          class="input"
-          type="text"
-          id="stocks-quantity"
-          placeholder="Enter the Number of Stocks bought"
-        />
-      </label>
-        <label class="input-label" for="current-price">Current Price
-        <input
-          class="input"
-          type="text"
-          id="current-price"
-          placeholder="Enter the Current Price of the stocks"
-      /></label>
+        <label for="Inital_price">
+                Intial Price
+                <input type="text" 
+                id="Inital_price"
+                placeholder="Enter the Intial Price:"/>
+            </label>
+        <label for="stock_quantity">
+                Quantity of the Stock
+                <input 
+                    type="text" 
+                    id="stock_quantity"
+                    placeholder="Enter the Number of the Stocks bought" 
+            /></label>
+        <label for="current_price">
+                Current Price
+                <input  
+                    type="text" 
+                    id="current_price" 
+                    placeholder="Enter the Current Price of Stocks:" 
+            /></label>
+        <button id="submit-btn">check</button>
+        <div id="output_box"></div>
+        <footer class="footer">
+            <p>@2021 Profit&Loss</p>
+            <ul class="social-links list-non-bullet">
+                <li class="list-item-inline">
+                    <img src="github.svg" width="5%" height="5%" />
 
-        <button id="submit-btn" class="btn-check">check</button>
+                </li>
+                <li class="list-item-inline">
+                    <img src="discord.svg" width="5%" height="5%" />
 
-        <div id="output-box" class="output"></div>
+                </li>
+                <li class="list-item-inline">
+                    <img src="twitter.svg" width="5%" height="5%" />
+
+                </li>
+                <li class="list-item-inline">
+                    <img src="instagram.svg" width="5%" height="5%" />
+
+                </li>
+
+            </ul>
+            <script src="mark14.js "></script>
+        </footer>
     </main>
-    <footer>
-        <!-- <p>© /2021 /Anusha</p> -->
-        <ul class="list-unordered inline-list">
-            <li>
-                <a class="links" href="https://github.com/" target="_blank">
-                    <img src="github.svg" alt="github" />
-                </a>
-            </li>
-            <li>
-                <a class="links" href="https://discord.com/channels/@me" target="_blank">
-                    <img src="discord.svg" alt="discord" />
-                </a>
-            </li>
-            <li>
-                <a class="links" href="https://twitter.com/" target="_blank">
-                    <img src="twitter.svg" alt="twitter" />
-                </a>
-            </li>
-            <li>
-                <a class="links" href="https://www.instagram.com/" target="_blank">
-                    <img src="instagram.svg" alt="instagram" />
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <script src="mark14.js"></script>
 </body>
 
 </html>
